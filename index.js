@@ -9,6 +9,7 @@ import StudentsRoute from "./routes/StudentsRoute.js";
 dotenv.config();
 // import Students from "./models/StudentModel.js";
 // import Users from "./models/UserModel.js";
+// import Employees from "./models/EmployeeModel.js";
 const app = express();
 
 try {
@@ -16,6 +17,7 @@ try {
     console.log('Database Connected');
     // await Students.sync();
     // await Users.sync();
+    // await Employees.sync();
 } catch (error) {
     console.error(error);
 }
