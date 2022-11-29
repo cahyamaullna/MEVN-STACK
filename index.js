@@ -5,6 +5,7 @@ import cors from "cors";
 import db from "./config/Database.js";
 import AuthRoute from "./routes/AuthRoute.js";
 import StudentsRoute from "./routes/StudentsRoute.js";
+import EmployeesRoute from "./routes/EmployeesRoute.js";
 
 dotenv.config();
 // import Students from "./models/StudentModel.js";
@@ -27,6 +28,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(AuthRoute);
 app.use(StudentsRoute);
+app.use(EmployeesRoute);
 
 
 app.listen(3000,()=> console.log('server running at port 3000'));
