@@ -5,9 +5,9 @@ import { getEmployees, getEmployeesById, addEmployees, updateEmployees, deleteEm
 const router = express.Router();
 
 router.get('/employees', verifyToken, getEmployees);
-router.get('/employees:id', verifyToken, getEmployeesById);
+router.get('/employees/:id', verifyToken, getEmployeesById);
 router.post('/employees', verifyToken, addEmployees);
-router.patch('/employees:id', verifyToken, updateEmployees);
-router.delete('/employees:id', verifyToken, deleteEmployees);
+router.patch('/employees/:id', verifyToken, updateEmployees);
+router.delete('/employees/:id', verifyToken, deleteEmployees);
 
 export default router;

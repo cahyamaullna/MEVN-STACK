@@ -18,7 +18,7 @@ export const getEmployeesById = async (req, res) => {
                 id: req.params.id
             }
         });
-        res.status(200).json(response)
+        res.status(200).json(response);
     } catch (error) {
         console.log(error);
     }
